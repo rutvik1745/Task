@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>POsition Absolute,relative ,fixed ,sticky</title>
+    <style>
+        /* css position: staic(default),absolute,relative , fixed,stickey */
+        .box {
+            display: inline-block;
+            border: 2px solid black;
+            width: 150px;
+            height: 150px;
+            margin: 2px;
+        }
+
+        #box3 {
+            /* relative: relative to its normal position */
+
+            /* position: absolute;
+            top: 34px;
+            left: 34px; */
+            /* position: fixed;
+            top: 3px; */
+            /* right: 4px; */
+            /* bottom: 2px; */
+            position: sticky;
+            top: 3px;
+        }
+        .container{
+            background-color: bisque;
+            border: 2px solid black;
+            height: 2000px;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="container">
+        <div class="box" id="box1">1</div>
+        <div class="box" id="box2">2</div>
+        <div class="box" id="box3">Chat with as</div>
+        <div class="box" id="box4">4</div>
+    </div>
+</body>
+
+</html>

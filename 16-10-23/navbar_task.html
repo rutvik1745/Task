@@ -1,0 +1,166 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Navbar Task</title>
+    <style>
+        .nav1 {
+            background-color: #115f64;
+        }
+
+        .nav1 ul {
+            overflow: auto;
+        }
+
+        .nav1 a {
+            float: left;
+            text-decoration: none;
+            color: white;
+            padding: 10px;
+
+        }
+
+        .nav1 li {
+            list-style: none;
+
+        }
+
+        .nav1 a:hover {
+            background-color: #0b464b;
+        }
+
+        .nav2 {
+            background-color: #282A35;
+            border-radius: 12px;
+        }
+
+        .nav2 ul {
+            overflow: auto;
+        }
+
+        .nav2 li {
+            list-style: none;
+        }
+
+        .nav2 a {
+            float: left;
+            color: aqua;
+            text-decoration: none;
+            padding: 12px;
+        }
+
+        .nav2 a:hover {
+            color: aliceblue;
+        }
+
+        .nav3 {
+            background-color: rgb(247, 170, 108);
+        }
+
+        .nav3 li {
+            list-style: none;
+        }
+
+        .nav3 a {
+            float: left;
+            text-decoration: none;
+            color: black;
+            padding: 10px;
+        }
+
+        .nav3 ul {
+            list-style: none;
+            overflow: auto;
+        }
+        .nav3 select{
+            background-color: none;
+            margin: 9.5px;
+            border: none;
+            background-color: rgb(247, 170, 108);
+            padding: 1px;
+        }
+        .nav4 {
+            background-color: burlywood;
+            border-radius: 100px;
+        }
+        .nav4 a{
+            float: left;
+            text-decoration: none;
+            color: black;
+            padding: 10px;
+        }
+        .nav4 li{
+            list-style: none;
+        }
+        .nav4 select{
+            background-color: none;
+            margin: 9.5px;
+            border: none;
+            background-color: burlywood;
+            padding: 1px;
+        }
+    </style>
+</head>
+
+<body>
+    <header>
+        <nav class="nav1">
+            <ul>
+                <li><a href="#">Home</a> </li>
+                <li><a href="#">Python</a> </li>
+                <li><a href="#">Java</a> </li>
+                <li><a href="#">JacaScript</a> </li>
+                <li><a href="#">SQL</a> </li>
+                <li><a href="#">PHP</a> </li>
+            </ul>
+        </nav>
+    </header>
+    <header>
+        <nav class="nav2">
+            <ul>
+                <li><a href="#">HTML</a> </li>
+                <li><a href="#">CSS</a> </li>
+                <li><a href="#">JAVASCRIPT</a> </li>
+                <li><a href="#">PYTHON</a></li>
+            </ul>
+        </nav>
+    </header>
+    <header>
+        <nav class="nav3">
+            <ul>
+                <li><a href="#">home</a></li>
+                <li><a href="#">shop</a></li>
+                <li><a href="#">Catgory</a></li>
+                <select name="Catgory" class="catgory" id="catgory" >
+                    <option value="man"><a href="#">Man</a></option>
+                    <option value="woman"><a href="#">Woman</a></option>
+                    <option value="kid"><a href="#">Kid</a></option>
+                </select>
+            </ul>
+        </nav>
+    </header>
+    <header>
+        <nav class="nav4">
+            <ul>
+                <li><a href="#">home</a></li>
+                <li><a href="#">shop</a></li>
+                <!-- <li><a href="#">Catgory</a></li> -->
+                <select name="Catgory" class="catgory" id="catgory" >
+                    <option value="man"><a href="#">Windows 11</a></option>
+                    <option value="woman"><a href="#">windows 12</a></option>
+                    <option value="kid"><a href="#">Windows 10</a></option>
+                </select>
+                <select name="Catgory" class="catgory" id="catgory" >
+                    <option value="man"><a href="#">Man</a></option>
+                    <option value="woman"><a href="#">Woman</a></option>
+                    <option value="kid"><a href="#">Kid</a></option>
+                </select>
+            </ul>
+        </nav>
+    </header>
+
+</body>
+
+</html>

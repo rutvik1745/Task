@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Form</title>
+</head>
+
+<body>
+    <h1>HTML < input>element</h1>
+    <form action="">
+        Enter Your name <br>
+        <input type="text" name="username">
+    </form>
+    <h1>html TextField Control</h1>
+    <form action="">
+        First Name: <input type="text" name="firstname">
+        <br><br>
+        Last Name: <input type="text" name="lastname">
+    </form>
+    <h1>html < textarea> tag in form</h1>
+    <form action="">
+        Enter your address <br>
+        <textarea name="" id="" cols="20" rows="2"></textarea>
+    </form>
+    <h1>label tag in form</h1>
+    <form action="">
+        <label for="firstname">First Name:</label><br />
+        <input type="text" id="firstname" , name="firstname"><br />
+        <label for="lastname">Last Name:</label>
+        <input type="text" id="lastname" , name="lastname"><br />
+    </form>
+    <h1>HTML password Field control</h1>
+    <form action="">
+        <label for="password">Password : </label>
+        <input type="password" name="password" id="">
+    </form>
+    <h1>html Email Field</h1>
+    <form action="">
+        <label for="email">Email : </label>
+        <input type="email" name="email" id="">
+    </form>
+    <h1>Radio Button</h1>
+    <form action="">
+        <label for="gender">Gender</label>
+        <input type="radio" name="gender" id="gender" value="male">male
+        <input type="radio" name="gender" id="gender" value="female">Female
+    </form>
+    <h1>Checkbox Control</h1>
+    <form action="">Hobby:</form><br>
+    <input type="checkbox" name="cricket" id="cricket" value="cricket">
+    <label for="footbool">Footbool</label><br>
+    <input type="checkbox" name="footbool" id="footbool" value="footbool">
+    <label for="cricket">cricket</label><br>
+    <input type="checkbox" name="hockey" id="hockey" value="hockey">
+    <label for="hockey">hockey</label>
+    <input type="submit" value="submit">
+    <form>
+        <label for="name">Enter name</label><br>
+        <input type="text" id="name" name="name"><br>
+        <label for="pass">Enter Password</label><br>
+        <input type="Password" id="pass" name="pass"><br>
+        <input type="submit" value="submit">
+    </form>
+    <h1>html < fieldset> element</h1>
+    <form action="">
+        <fieldset>
+            <legend>User Information</legend>
+            <label for="name">Enter name</label><br>
+            <input type="text" name="name" id="name"><br>
+            <label for="pass">Enter Password</label><br>
+            <input type="tel" name="pass" id="pass"><br>
+            <input type="button" value="submit">
+        </fieldset>
+    </form>
+    <h2>Regstration form</h2>
+    <form action="">
+        <fieldset>
+            <legend>User Personal information</legend>
+            <label for="">Enter Your full name</label><br>
+            <input type="text" name="name" id="name"><br>
+            <label for="">Enter your Email</label><br>
+            <input type="email" name="email" id="email"><br>
+            <label for="">Select your gender</label><br>
+            <input type="radio" name="Male" id="Male" value="Male"> Male<br>
+            <input type="radio" name="Female" id="Female" value="Female"> Female<br>
+            <input type="radio" name="Other" id="Other" value="Other"> Other<br>
+            <label for="">Enter your address</label><br>
+            <textarea name="" id="" cols="30" rows="10"></textarea><br>
+            <input type="submit" value="submit">
+        </fieldset>
+    </form>
+
+    <table>
+        <tr>
+            <td class="tdlable"><label for="register_name" class="label">Enter Name:</label></td>
+            <td><input type="text" name="name" id="name" style="width: 160px;"></td>
+        </tr>
+        <tr>
+            <td class="tdlable"><label for="register_password" class="label">Enter Password : </label></td>
+            <td><input type="password" name="password" id="password" style="width: 160px;"></td>
+        </tr>
+        <tr>
+            <td class="tdlable"><label for="gender">Select Gender :</label></td>
+            <td><input type="radio" name="gender" id="Male" value="male">Male
+                <input type="radio" name="gender" id="Female" value="female">Female
+            </td>
+        </tr>
+        <tr>
+            <td class="tdlable"><label for="__country" class="label">Select Country</label></td>
+            <td><select name="country" id="_country" >
+                    <option value="india">India</option>
+                    <option value="pakistan">Pakistan</option>
+                    <option value="china">China</option>
+                </select>
+            </td>
+        </tr>
+        <tr>
+            <td colspan="2"><div align="right"><input type="submit" value="Register"></div></td>
+        </tr>
+    </table>
+</body>
+
+</html>
