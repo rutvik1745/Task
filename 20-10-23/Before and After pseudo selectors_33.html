@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Befor and after Pseudo Selectors</title>
+    <style>
+        body {
+            margin: 0;
+            padding: 0;
+            background-color: black;
+            color: white;
+            /* background: url('https://imgs.search.brave.com/YpzrjTycYF-tsuo1ZCpBG0Oj8m2rIxmlZ4ARvmW5Lt4/rs:fit:860:0:0/g:ce/aHR0cHM6Ly93LmZv/cmZ1bi5jb20vZmV0/Y2gvYjUvYjVkNzgz/NzdlNjliMTYwZWNj/OWQ4OWVmN2ZlNjdh/MWEuanBlZw')no-repeat center center/cover; */
+        }
+
+        /* header{
+            display: flex;
+            flex-direction: row;
+        } */
+        header::before {
+        
+            background: url('https://imgs.search.brave.com/YpzrjTycYF-tsuo1ZCpBG0Oj8m2rIxmlZ4ARvmW5Lt4/rs:fit:860:0:0/g:ce/aHR0cHM6Ly93LmZv/cmZ1bi5jb20vZmV0/Y2gvYjUvYjVkNzgz/NzdlNjliMTYwZWNj/OWQ4OWVmN2ZlNjdh/MWEuanBlZw')no-repeat center center/cover;
+            content: "";
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            z-index: -1;
+            opacity: 0.8;
+            
+        }
+
+        section {
+            height: 344px;
+            display: flex;
+
+            margin: 3px 230px;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center
+        }
+
+        li {
+            list-style: none;
+            padding: 20px 23px;
+        }
+
+        .navigation {
+            font-size: 20px;
+            display: flex;
+            flex-direction: row;
+        }
+
+        /* section::before {
+
+
+            content: "This is a content";
+            align-items: center;
+        }
+
+        section::after {
+
+
+            content: "This is a content";
+            align-items: center;
+        } */
+
+        h1 {
+            font-size: 4rem;
+        }
+
+        p {
+            text-align: center;
+        }
+    </style>
+</head>
+
+<body>
+    <header>
+        <nav class="navbar">
+            <ul class="navigation">
+                <li class="item">Home</li>
+                <li class="item">About</li>
+                <li class="item">Services</li>
+                <li class="item">Contact Us</li>
+            </ul>
+        </nav>
+
+    </header>
+    <section>
+        <h1>Welcome to coding world</h1>
+        <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Pariatur eligendi nemo eos, corporis culpa
+            veritatis quaerat suscipit, fugiat neque nostrum molestiae laudantium ad sapiente consectetur nihil
+            eaque natus! Eos, repudiandae.</p>
+    </section>
+
+</body>
+
+</html>

@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Box Shadow and Text Shadow</title>
+    <style>
+        .container{
+            display: flex;
+        }
+        .card{
+            padding: 23px 12px;
+            margin: 23px 12px;
+            background-color: rgb(214, 198, 230);
+            /* box-shadow: 10px 13px 10px green; */
+            /* box-shadow: offset-x offset-y blur-radius spared-radius color */
+            /* box-shadow: -10px -13px 10px green;
+            box-shadow: -10px -13px 10px 38px green;
+            box-shadow: -10px -13px 10px 38px rgba(71, 172, 172, 0.5); */
+            box-shadow: inset  50px 30px green, 4px 6px red;
+
+        }
+        .card h2{
+            text-shadow: 0px 2px rgb(255, 255, 255);
+            text-shadow: 0px 2px 6px rgb(255, 255, 255);
+        }
+    </style>
+</head>
+
+<body>
+    <div class="container">
+        <div class="card" id="car-1">
+            <h2>This is a c++ course</h2>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Eaque iusto modi sequi eligendi illum, id fugiat, iste dolore voluptas maxime facilis, libero voluptatum quam itaque molestias rem. Accusantium, aliquid consequatur!</p>
+        </div>
+        <div class="card" id="car-2">
+            <h2>This is HTML Courser</h2>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Eaque iusto modi sequi eligendi illum, id fugiat, iste dolore voluptas maxime facilis, libero voluptatum quam itaque molestias rem. Accusantium, aliquid consequatur!</p>
+        </div>
+        <div class="card" id="car-3">
+            <h2>Card3</h2>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Eaque iusto modi sequi eligendi illum, id fugiat, iste dolore voluptas maxime facilis, libero voluptatum quam itaque molestias rem. Accusantium, aliquid consequatur!</p>
+        </div>
+    </div>
+</body>
+
+</html>

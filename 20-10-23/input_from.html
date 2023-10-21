@@ -1,0 +1,148 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Input Form</title>
+</head>
+
+<body>
+    <!-- input type = "text" -->
+    <form action="">
+        <label for="">Enter First name</label>
+        <input type="text" name="First Name"><br>
+        <label for="">Enter Last Name</label><br>
+        <input type="text" name="lastname">
+        <p><strong>Note:</strong> The dagault maximum character lenght is 20.</p>
+    </form>
+    <!-- input type='password' -->
+    <form action="">
+        <label for="">Enter First name</label>
+        <input type="text" name="First Name"><br>
+        <label for="">Enter Password</label>
+        <input type="password" name="password" id=""><br>
+        <input type="submit" value="submit">
+    </form>
+    <!-- input type ="submit" -->
+    <form action="">
+        <label for="">Enter First name</label>
+        <input type="text" name="First Name"><br>
+        <label for="">Enter Password</label>
+        <input type="password" name="password" id=""><br>
+        <input type="submit" value="submit">
+    </form>
+    <!-- input type="reset" -->
+    <form action="">
+        <label for="">User id:</label>
+        <input type="text" name="user-id" value="user">
+        <label for="">Password:</label>
+        <input type="text" name="password" value="pass"><br>
+        <input type="submit" value="Login">
+        <input type="reset" value="Reset">
+    </form>
+    <!-- input type= "radio" -->
+    <form>
+        <p>Kindly Select your favorite color</p>
+        <input type="radio" name="color" value="red"> Red <br>
+        <input type="radio" name="color" value="blue"> blue <br>
+        <input type="radio" name="color" value="green">green <br>
+        <input type="radio" name="color" value="pink">pink <br>
+        <input type="submit" value="submit">
+    </form>
+    <!-- input type="checkbox" -->
+    <form action="">
+        <label for="">Enter your Name:</label>
+        <input type="text" name="name">
+        <p>Kindly Select Your favourite sports</p>
+        <input type="checkbox" name="sport1" value="Cricket">Cricket <br>
+        <input type="checkbox" name="sport2" id="" value="tennis">Tennis <br>
+        <input type="checkbox" name="sport3" value="football">Football <br>
+        <input type="submit" value="submit">
+    </form>
+    <!-- input type="button" -->
+    <form action="">
+        <input type="button" value="Clcik me" onclick="alert('you are learning Html')">
+    </form>
+    <!-- input type="file" -->
+    <form action="">
+        <label for="">Select file to upload:</label>
+        <input type="file" name="Newfile">
+        <input type="submit" value="submit">
+    </form>
+    <!-- input type= "image" -->
+    <input type="image" name="" id="" src="bg.png">
+    <p>html5 newly added input types element</p>
+    <!-- input type ="color" -->
+    <form action="">
+        pick your Favorite color: <br><br>
+        <input type="color" name="upclick" id="" value="#a52a2a">up<br><br>
+        <input type="color" name="downclick" id="">Downclick
+    </form>
+    <!-- input type = date -->
+    <form action="">
+        Select Start and End Date: <br><br>
+        <input type="date" name="Start date" id="">Start Date: <br><br>
+        <input type="date" name="end date" id="">End Date
+    </form>
+    <!-- input type = "Datetime-local" -->
+    <form action="">
+        <label for="">Select the meeting schedule <br><br> select date & time <input type="datetime-local"
+                name="meetingdate" id=""><br><br>
+        </label>
+        <input type="submit">
+    </form>
+    <!-- input type = "email" -->
+    <form action="">
+        <label for="">Enter yout Email-address</label>
+        <input type="email" name="email" id="" required>
+        <input type="submit">
+        <p><strong>Note:</strong>User can also enter multiple email addresses separating by comma or whitespace as
+            following</p><br>
+        <input type="email" name="email" multiple><br>
+        <input type="submit">
+    </form>
+    <!-- input type="month" -->
+    <form>
+        <label>Enter your Birth Month-year: </label>
+        <input type="month" name="newMonth"><br>
+        <input type="submit"><br>
+    </form>
+    <!-- input type = "number" -->
+    <form action="">
+        <label for="">Enter Your age:</label><br>
+        <input type="number" name="num" min="50" max="80"><br><br>
+        <input type="submit">
+    </form>
+    <!-- input type = "url" -->
+    <form action="">
+        <label for="">Enter your website URL:</label>
+        <input type="url" name="website" id="" placeholder="http://example.com"><br><br>
+        <input type="submit" value="send data"><br>
+    </form>
+    <!-- input type= week -->
+    <form>
+        <label><b>Select your best week of year:</b></label><br><br>
+        <input type="week" name="bestweek">
+        <input type="submit" value="Send data"><br><br>
+    </form>
+    <!-- input type= "search" -->
+    <form>
+        <label>Search here:</label>
+        <input type="search" name="q">
+        <input type="submit" value="search">
+    </form>
+    <!-- input type = 'tel' -->
+    <form>  
+        <label><b>Enter your Telephone Number(in format of xxxxx-xxxxx):</b></label>  
+        <input type="tel" name="telephone" pattern="[0-9]{5}-[0-9]{5}" required>  
+        <input type="submit"><br><br>  
+     </form>  
+     <form>  
+        <label><b>Enter your Telephone Number(in format of xxx-xxx-xxxx):</b></label>  
+        <input type="tel" name="telephone" pattern="[0-9]{3}-[0-9]{3}-[0-9]{4}" required>  
+        <input type="submit"><br><br>  
+     </form> 
+</body>
+
+</html>
