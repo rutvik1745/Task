@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Animations & Keyframes</title>
+    <style>
+        .container{
+            background-color: rgb(2, 0, 102);
+           
+        }
+        .box{
+            background-color: aqua;
+            width: 250px;
+            height: 250px;
+            position: relative;
+            animation: rutvik;
+            animation: rutvik1;
+            animation-duration: 8s;
+            animation-iteration-count: 2;
+            /* animation-fill-mode: forwards ;
+            animation-fill-mode: backwards ; */
+            /* animation-timing-function: ease-in;
+            animation-timing-function: ease-out;
+            animation-timing-function: ease-in-out; */
+            /* animation-delay: 3s; */
+            /* animation-direction: alternate; */
+            /* animation-direction: reverse; */
+
+            /* THese properties can be set using thi shorthand */
+            /* animation: animation-name animation-duration animation-timing-funcation animation-delay animation-iteration-count animation-fill-mode; */
+            animation: rutvik 1s ease-in 1s 12 backwards;
+
+        }
+        @keyframes rutvik1{
+            0%{
+                top: 0;
+                left: 0;
+            }
+            25%{
+                top: 250px;
+                left: 0;
+            }
+            75%{
+                top: 250px;
+                left: 250px;
+
+            }
+            100%{
+                top: 0px;
+                left: 250;
+
+            }
+        }
+        @keyframes rutvik{
+            form{
+                width: 200px;
+
+            }
+            to{
+                width: 1000px
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="box">
+            This is a box
+        </div>
+    </div>
+</body>
+</html>
