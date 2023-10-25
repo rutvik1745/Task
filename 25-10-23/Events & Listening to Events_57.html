@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Js Events</title>
+    <style>
+        #btn {
+            padding: 14px;
+            border: 2px solid rgb(206, 180, 180);
+            color: white;
+            background-color: black;
+            border-radius: 5px;
+            cursor: pointer;
+
+        }
+    </style>
+</head>
+
+<body>
+    <!-- Browser events:
+    click
+    contextmen
+    mouserover/mouseout
+    mousedown/mouseup 
+    mousemove
+
+    submit
+    focus
+
+    DOMContentLoaded
+
+    transitionend -->
+    <div class="container">
+        <h1>This is my heading</h1>
+        <p id=para>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Accusantium delectus dignissimos excepturi
+            possimus a, quisquam quas voluptatum, illo molestiae laudantium pariatur quae. Quo ratione obcaecati placeat
+            mollitia beatae odit vel nam eius accusantium cum neque, reiciendis vitae at dolorem debitis, quia sint enim
+            velit modi minus deserunt repudiandae sed, voluptate quisquam! Facere illum iste sapiente, minima,
+            assumenda, quaerat reiciendis dolores dolorum ut voluptates voluptas quo?</p>
+        <button id="btn" onclick="toggleHide()">Show/Hide</button>
+    </div>
+    <script>
+
+        let para = document.getElementById('para');
+        para.addEventListener('mouseover', function run(){
+            console.log('mouse inside');
+        });
+        para.addEventListener('mouseout', function run(){
+            console('mouse now went  outside');
+        });
+        function toggleHide() {
+            let btn = document.getElementById('btn');
+            let para = document.getElementById('para');
+            if (para.style.display == 'none') {
+                para.style.display = 'block';
+            }
+            else {
+                para.style.display = 'none';
+            }
+
+        }
+    </script>
+</body>
+
+</html>
