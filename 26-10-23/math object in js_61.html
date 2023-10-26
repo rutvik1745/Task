@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Math Object in JavaScript</title>
+    <style>
+
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1>This is math object tutorial</h1>
+    </div>
+    <script>
+
+        //Printing the math object
+        let m = Math;
+        console.log(m);
+        //Printing the constants from Math object
+        console.log("The value of Math.E is ",Math.E);
+        console.log("The value of Math.LN2 is ",Math.LN2);
+        console.log("The value of Math.PI is ",Math.PI);
+
+        // printing the Functions from Math Object
+        let a = 34.64534;
+        let b = 89;
+        console.log("The value of a and b is",a,b);
+        console.log("The value of a and b rounded is ",Math.round(a),Math.round(b));
+        console.log("3 raised to the power of 2 is",Math.pow(3,2))
+        console.log("Square root of 36 is",Math.sqrt(36))
+        console.log("Square root of 6 is",Math.sqrt(6))
+        console.log("Square root of 50 is",Math.sqrt(50))
+
+
+        //Ceil and floor
+        console.log("5.8 rounded up to nearest integer is ", Math.ceil(5.8))
+        console.log("5.8 rounded down to nearest integer is ", Math.floor(5.8))
+
+        //Abs Function
+        console.log("Abolute vacos of 5.66 is ", Math.abs(5.66));
+        console.log("Abolute value of -5.66 is ", Math.abs(5.66));
+
+        //Trinonometric Fuction
+        console.log("The value of sin(pi) is ",Math.sin(Math.PI/2));
+        console.log("The value of tan(pi) is ",Math.tan(Math.PI/2));
+        console.log("The value of cos(pi) is ",Math.cos(Math.PI/2));
+
+        // Min and Max function
+        console.log("Minimum value of 4,5,6,",Math.min(4,5,6));
+        console.log("Maxmum value of 4,5,6,",Math.max(4,5,6));
+
+        //Generating a random number
+        let r = Math.random();
+        // Random numberr b/w(a/b) = a+(b-1)*Math.rendom()
+        let r1 = Math.random();
+        let a1=50;
+        let b1 = 100;
+        let r50_100 = a1 +(b1-a1)*Math.random()
+        console.log("The reandom number is ",r)
+        console.log("The reandom number is ",r50_100)
+    </script>
+</body>
+</html>
