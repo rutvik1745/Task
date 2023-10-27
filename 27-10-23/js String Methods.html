@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>JavaScript String Methods</title>
+</head>
+
+<body>
+    <div class="continer">
+        <h1>JavaScript String Methods</h1>
+        <p>Replace "Microsoft" with "W3Schools" in the paragraph below:</p>
+
+        <button onclick="myFunction()">Try it</button>
+
+        <p id="demo">Please visit Microsoft!</p>
+    </div>
+    <script>
+        let text = "ABCDEFGHIJKLMNOPQRSTUVWXYZ";
+        let length = text.length;
+        console.log(length)
+        let text1 = "Apple, Banana, Kiwi";
+        let part = text.slice(7, 13);
+        console.log(part)
+        let str = "Apple, Banana, Kiwi";
+        let part1 = str.substr(7, 6);
+        console.log(part1)
+        let text2 = "Please visit Microsoft!";
+        let newText2 = text.replace("Microsoft", "W3Schools");
+        console.log(text2)
+        console.log(newText2)
+        function myFunction() {
+            let text = document.getElementById("demo").innerHTML;
+            document.getElementById("demo").innerHTML = text.replace(/MICROSOFT/i, "W3Schools")
+        }
+        console.log(text.toLocaleLowerCase())
+        console.log(str.toUpperCase())
+        let a1 = "hello"
+        let a2 = "world"
+        let a3 = a1.concat(" ", a2);
+        console.log(a3)
+        let text12 = "      Hello World!      ";
+        let text13 = text12.trim();
+        let text14 = text12.trimEnd();
+        console.log(text12)
+        console.log(text13)
+        console.log(text14)
+        let t = "5";
+        let padded = t.padStart(4, "0");
+        console.log(padded);
+        let padded1 = t.padStart(4, "x");
+        console.log(padded1)
+        let padded3 = t.padEnd(4, "0");
+        console.log(padded3);
+        let padded4 = t.padEnd(4, "x");
+        console.log(padded4)
+        let text10 = "HELLO WORLD";
+        let char = text10.charAt(0);
+        console.log(text10)
+        console.log(char)
+        let char1 = text.charCodeAt(0);
+        console.log(char1)
+        let char2 = text10[0]
+        console.log(char2)
+        console.log(text10.split("O"))
+
+    </script>
+</body>
+
+</html>

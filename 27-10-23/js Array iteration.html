@@ -1,0 +1,160 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Array iteration</title>
+</head>
+
+<body>
+    <div class="container">
+        <h1>Array iteration</h1>
+        <h1>JavaScript Arrays</h1>
+        <h2>The forEach() Method</h2>
+
+        <p>Call a function once for each array element:</p>
+
+        <p id="demo"></p>
+
+    </div>
+    <script>
+        const numbers = [45, 4, 9, 16, 25];
+
+        let txt = "";
+        numbers.forEach(myFunction);
+        document.getElementById("demo").innerHTML = txt;
+
+        function myFunction(value) {
+            txt += value + "<br>";
+        }
+        const numbers1 = [45, 4, 9, 16, 25];
+        const numbers2 = numbers1.map(myFunction);
+
+        function myFunction(value, index, array) {
+            return value * 2;
+        }
+        console.log(numbers2)
+        const myArr = [1, 2, 3, 4, 5, 6];
+        const newArr = myArr.flatMap((x) => x * 2);
+        console.log(newArr)
+        const numbers5 = [45, 4, 9, 16, 25];
+        const over18 = numbers5.filter(myFunction);
+        // JavaScript Array filter()
+        function myFunction(value, index, array) {
+            return value > 18;
+        }
+        console.log(numbers5)
+        console.log(over18)
+        // JavaScript Array reduce()
+        const numbers6 = [45, 4, 9, 16, 25];
+        let sum = numbers6.reduce(myFunction);
+
+        function myFunction(total, value, index, array) {
+            return total + value;
+        }
+        console.log(numbers6)
+        console.log(sum)
+
+        const numbers7 = [45, 4, 9, 16, 25];
+        let sum1 = numbers7.reduce(myFunction, 100);
+
+        function myFunction(total, value) {
+            return total + value;
+        }
+        console.log(numbers7)
+        console.log(sum1)
+
+        // JavaScript Array reduceRight()
+        const numbers8 = [45, 4, 9, 16, 25];
+        let sum2 = numbers8.reduceRight(myFunction);
+
+        function myFunction(total, value, index, array) {
+            return total + value;
+        }
+        console.log(numbers8)
+        console.log(sum2)
+
+        // JavaScript Array every()
+
+        const numbers9 = [45, 4, 9, 16, 25];
+        let allOver18 = numbers9.every(myFunction);
+
+        function myFunction(value, index, array) {
+            return value > 18;
+        }
+        console.log(numbers9)
+        console.log(allOver18)
+
+        // JavaScript Array some()
+        const numbers10 = [45, 4, 9, 16, 25];
+        let someOver18 = numbers10.some(myFunction);
+
+        function myFunction(value, index, array) {
+            return value > 18;
+        }
+        console.log(numbers10)
+        console.log(someOver18)
+
+        // JavaScript Array indexOf()
+        const fruits1 = ["Apple", "Orange", "Apple", "Mango"];
+        let position = fruits1.indexOf("Apple");
+        console.log(position)
+
+        // JavaScript Array lastIndexOf()
+        const fruits3 = ["Apple", "Orange", "Apple", "Mango"];
+        let position1 = fruits3.lastIndexOf("Apple") + 1;
+        console.log(position1)
+
+        // JavaScript Array find()
+        const n1 = [4,9,16,25,29];
+        let first = n1.find(myFunction);
+        function myFunction(value,index,array){
+            return value>18;
+        }
+        console.log("first",first)
+
+        // Array findIndex()
+        const n2 = [4,9,16,25,29];
+        let first2 = n2.findIndex(myFunction);
+        function myFunction(value,index,array){
+            return value > 18;
+        }
+        console.log("first2",first2)
+
+        // JavaScript Array.from()
+        const arr =Array.from("ABCDEFG");
+        console.log("from",arr)
+
+        //javascripts Array keys()
+        const f = ["Banana","Orange","Apple","Mango"];
+        const keys = f.keys();
+        for (let x of keys){
+            console.log("x",x)
+        }
+
+        //javaScript Array entries()
+        const fr =["Banana","Orange","Apple","Mango"];
+        const f2 = fr.entries();
+        for (let x of f){
+            console.log("entries",x)
+        } 
+
+        // JavaScript Array includes()
+        const fruits = ["Banana", "Orange", "Apple", "Mango"];
+
+        console.log(fruits.includes("Mango")); // is true
+        // JavaScript Array Spread (...)
+
+
+        const q1 = ["Jan", "Feb", "Mar"];
+        const q2 = ["Apr", "May", "Jun"];
+        const q3 = ["Jul", "Aug", "Sep"];
+        const q4 = ["Oct", "Nov", "May"];
+
+        const year = [...q1, ...q2, ...q3, ...q4];
+        console.log(year)
+    </script>
+</body>
+
+</html>

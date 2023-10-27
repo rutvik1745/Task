@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>JavaScripts Arrays</title>
+</head>
+<body>
+    <div class="container">
+        <h1>Array</h1>
+        <p id="demo"></p>
+    </div>
+    <script>
+        const cars = [
+            "Saab",
+            "Volo",
+            "BMW",
+        ];
+        let clen = cars.length;
+        let text = "<ul>";
+        for (let i = 0; i<clen;i++){
+            text += "<li>" +cars[i] + "</li>";
+        }
+        text += "</ul>";
+        document.getElementById("demo").innerHTML = text;
+        console.log(cars[0]);
+        cars[0]="Audi";
+        console.log(cars[0])
+        console.log(cars)
+        console.log(cars.toString());
+        console.log(cars.length);
+        console.log(cars[cars.length -1])
+        cars.push("jeep");
+        console.log(cars);
+        cars[6]="hero";
+        console.log(cars);
+        const points = new Array(40,10,1,5,25,10,22);
+        const point1 = [40,10,2,1,50,10,1];
+        console.log(points);
+        console.log(point1);
+        console.log(typeof points);
+        console.log(typeof point1);
+        console.log(cars instanceof Array)
+    </script>
+</body>
+</html>

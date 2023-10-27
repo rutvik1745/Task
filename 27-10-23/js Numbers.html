@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>JavaScript Numbers</title>
+</head>
+
+<body>
+    <script>
+        let x = 3.14;    // A number with decimals
+        let y = 3;       // A number without decimals
+        let x1 = "100";
+        let y1 = "10";
+        let z1 = x1 * y1
+        console.log(z1)
+        console.log(typeof z1)
+        console.log(typeof x1)
+        //this is not work
+        // let x = "100";
+        // let y = "10";
+        // let z = x + y;
+        let x2 = 100 / "Apple";
+        console.log(x2)
+        let x3 = 100 / "10";
+        console.log(x3)
+
+        let myNumber = 2;
+        // Execute until Infinity
+        while (myNumber != Infinity) {
+            myNumber = myNumber * myNumber;
+        }
+        console.log(myNumber)
+        let x4 =  2 / 0;
+        console.log(x4)
+        console.log(typeof Infinity);
+        console.log(myNumber.toString(2));
+        let y5 = new Number(500);
+        console.log(y5)
+    </script>
+</body>
+
+</html>

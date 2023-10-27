@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Array Method</title>
+</head>
+<body>
+    <div class="continer">
+        <h1>Array length</h1>
+    </div>
+    <script>
+        const fruits = ["Banana","Orange","Apple","Mango"];
+        let size = fruits.length;
+        let z = fruits.toString();
+        console.log(z)
+        console.log(fruits.pop())
+        console.log(fruits)
+        fruits.push("Kiwi")
+        console.log(fruits)
+        fruits.shift();
+        console.log(fruits)
+        fruits.unshift("Lemon");
+        console.log(fruits);
+        fruits[1] = "Watermeloan";
+        console.log(fruits);
+        const car = ["audi","bmw"];
+        const my = fruits.concat(car);
+        console.log(my)
+        const m = my.concat("Peter");
+        console.log(m)
+        const myArr = [[1,2],[3,4],[5,6]];
+        console.log(myArr);
+        const newArr = myArr.flat();
+        console.log(newArr);
+        const fruits1 = ["Banana","Orange","Apple","Mango"];
+        fruits1.splice(2,0,"Lemon","Kiwi");
+        console.log(fruits1);
+        fruits1.splice(0,1);
+        console.log(fruits1)
+        const c = fruits1.slice(1);
+        console.log(c)
+        console.log(fruits1)
+        const d = fruits1.slice(1,4);
+        console.log(d)
+    </script>
+</body>
+</html>

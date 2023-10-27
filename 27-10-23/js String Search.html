@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>String Search</title>
+</head>
+
+<body>
+    <div class="container">
+        <h1>String Search</h1>
+        <p>ES2020 intoduced the string method matchAll().</p>
+
+<p id="demo"></p>
+<p id="demo1"></p>
+
+    </div>
+    <script>
+        let text20 = "I love cats. Cats are very easy to love. Cats are very popular."
+        const iterator = text20.matchAll("Cats");
+        const iterator2 = text20.matchAll(/Cats/gi);
+
+        document.getElementById("demo").innerHTML = Array.from(iterator);
+        document.getElementById("demo1").innerHTML = Array.from(iterator2);
+        let text = "Please locate where 'locate' occurs!";
+        let index1 = text.indexOf("locate");
+        console.log(index1)
+        let index2 = text.lastIndexOf("locate");
+        console.log(index2)
+        let index3 = text.search("locate")
+        console.log(index3)
+        let text2 = "The rain in SPAIN stays mainly in the plain";
+        console.log(text2.match("ain"));
+        console.log(text2.match(/ain/));
+        console.log(text2.match(/ain/g));
+        console.log(text2.match(/ain/gi));
+        console.log(text.matchAll("aim"));
+        let text3 = "Hello world, welcome to the universe.";
+        console.log(text3.includes("world"));
+        console.log(text3.includes("world",12));
+        console.log(text3.includes("world",6));
+        console.log(text3.startsWith("Hello"));
+        console.log(text.startsWith("world", 5))
+
+
+    </script>
+</body>
+
+</html>
