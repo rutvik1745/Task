@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>RegExp</title>
+</head>
+
+<body>
+    <div class="container">
+        <h1>JavaScript Regular Expressions</h1>
+    </div>
+    <script>
+        let text = "Visit W3Schools!";
+        let n = text.search("W3Schools");
+        console.log(n)
+
+        // Using String search() With a Regular Expression
+        let n1 = text.search(/w3schools/i);
+        console.log(n1)
+
+
+
+        // Using String replace() With a String
+        let text2 = "Visit Microsoft!";
+        let result = text2.replace("Microsoft", "W3Schools");
+        console.log(result)
+
+        // Use String replace() With a Regular Expression
+        let text3 = "Visit Microsoft!";
+        console.log(text3)
+        let result3 = text.replace(/microsoft/i, "W3Schools");
+        console.log(result3)
+        let text4 = "Is this all there is?";
+        let result4 = text.match(/[h]/g);
+        console.log(result4)
+        console.log(text4)
+
+        // Using test()
+        let text5 = "The best things in life are free!innerHTML";
+        const pattern = /e/;
+        console.log(text5)
+        console.log(pattern.test(text5))
+
+
+    </script>
+
+</body>
+
+</html>

@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Array Const</title>
+</head>
+
+<body>
+    <div class="container">
+        <h1>Array const</h1>
+    </div>
+    <script>
+        // Block Scope
+        const cars = ["Saab", "Volvo", "BMW"];
+        console.log(cars[0])
+        {
+            const cars = ["Toyota", "Volvo", "BMW"]
+            console.log(cars[0])
+        }
+        console.log(cars[0])
+
+        var cars1 = ["Volvo", "BMW"];   // Allowed
+        var cars1 = ["Toyota", "BMW"];  // Allowed
+        cars1 = ["Volvo", "Saab"];      // Allowed
+    </script>
+</body>
+
+</html>

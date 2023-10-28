@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>JavaScript Date Formats</title>
+</head>
+<body>
+    <div class="container">
+        <h1>JavaScript Date Formats</h1>
+        <p id="demo"></p>
+    </div>
+    <script>
+        // JavaScript ISO Dates
+        // const d = new Date("2015-03-25")
+        // document.getElementById("demo").innerHTML = d
+
+        // ISO Dates (Year and Month)
+        // const d = new Date("2015-03")
+        // document.getElementById("demo").innerHTML = d
+
+        // ISO Dates (Only Year)
+        // const d = new Date("2015")
+        // document.getElementById("demo").innerHTML = d
+
+        // ISO Dates (Date-Time)
+        // const d = new Date("2015-03-25T12:00:00Z")
+        // document.getElementById("demo").innerHTML = d
+
+        // JavaScript Long Dates.
+        // const d = new Date("2015-03-25T12:00:00Z")
+        // document.getElementById("demo").innerHTML = d
+
+        // Date Input - Parsing Dates
+        const msec = Date.parse("March 21,2012");
+        document.getElementById("demo").innerHTML = msec;
+        
+    </script>
+</body>
+</html>

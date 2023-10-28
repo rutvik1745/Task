@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=
+    , initial-scale=1.0">
+    <title>Js Iterables</title>
+</head>
+<body>
+    <div class="container">
+        <h1>JavaScript iterable</h1>
+    </div>
+    <script>
+        const name = "W3School";
+        for ( x of name){
+            console.log(x)
+        }
+        const letters = ["a","b","c"];
+        for( x of letters){
+            console.log(x)
+        }
+        const letters1 = (["a","b","c"]);
+        for (x of letters1){
+            console.log(x)
+        }
+        const fruits = new Map([
+            ["apples",500],
+            ["bananas",300],
+            ["oranges",200]
+        ]);
+        for (x of fruits){
+            console.log(x)
+        }
+    </script>
+</body>
+</html>

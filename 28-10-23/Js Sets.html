@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>JavaScript Sets</title>
+</head>
+<body>
+    <div class="container">
+        <h1>JavaScript Sets</h1>
+    </div>
+    <script>
+        const letters = new Set(["a","b","c"]);
+        console.log(letters)
+        const l = new Set();
+        l.add("a");
+        l.add("b");
+        console.log(l)
+
+        // for Each() method
+        letters.forEach(function(value){
+            console.log(value)
+        })
+        console.log(letters.values())
+        for ( const x of letters.values()){
+            console.log(x)
+        }
+    </script>
+</body>
+</html>
