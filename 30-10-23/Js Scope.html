@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Js Scope</title>
+</head>
+
+<body>
+    <div class="container">
+        <h1>JavaScript Scope</h1>
+    </div>
+    <script>
+        function myFunction() {
+            let car = "Volvo";
+            // code here CAN use carName
+            console.log(car);
+        }
+        // console.log(carName)
+        myFunction()
+        let carName = "Audi";
+        // code here can use carName
+
+        function myFunction1() {
+            // code here can also use carName
+            console.log(carName)
+        }
+        myFunction1()
+        myFunction();
+
+        // code here can use carName
+
+        function myFunction2() {
+            carname = "BMW";
+        }
+        myFunction2();
+        console.log(carname);
+    </script>
+</body>
+
+</html>

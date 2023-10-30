@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Js best Practices</title>
+</head>
+
+<body>
+    <div class="container">
+        <h1>JavaScripts Best Practices</h1>
+    </div>
+    <script>
+        // Declare at the beginning
+        let firstName, lastName, price, discount, fullPrice;
+
+        // Use later
+        firstName = "John";
+        lastName = "Doe";
+
+        price = 19.90;
+        discount = 0.10;
+
+        fullPrice = price - discount;
+
+        // This also goes for loop variables:
+        // for (let i = 0; i < 5; i++) {
+
+
+        // Initialize Variables
+        // Declare and initiate at the beginning
+        // let firstName = "";
+        // let lastName = "";
+        // let price = 0;
+        // let discount = 0;
+        // let fullPrice = 0,
+        // const myArray = [];
+        // const myObject = {};
+
+
+        // Declare Objects with const
+
+        // let car = { type: "Fiat", model: "500", color: "white" };
+        // car = "Fiat";      // Changes object to string
+
+        // const car1 = { type: "Fiat", model: "500", color: "white" };
+        // car = "Fiat";      // Not possible
+
+
+        // // Declare Arrays with const
+        // let cars = ["Saab", "Volvo", "BMW"];
+        // cars = 3;    // Changes array to number
+        // const cars1 = ["Saab", "Volvo", "BMW"];
+        // cars = 3;    // Not possible
+
+        // Beware of Automatic Type Conversions
+
+        // let x = "Hello";     // typeof x is a string
+        // x = 5;               // changes typeof x to a number
+
+        // Use === Comparison
+        // The == comparison operator always converts(to matching types) before comparison.
+
+        //     The === operator forces comparison of values and type:
+        // 0 == "";        // true
+        // 1 == "1";       // true
+        // 1 == true;      // true
+
+        // 0 === "";       // false
+        // 1 === "1";      // false
+        // 1 === true;     // false
+
+        
+    </script>
+</body>
+
+</html>
