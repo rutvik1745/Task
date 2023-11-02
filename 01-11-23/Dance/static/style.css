@@ -1,0 +1,124 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+#logo{
+    display: flex;
+    color: white;
+    align-items: center;
+    margin: 0 14px;
+    font-size: 20px;
+}
+#logo img{
+    height: 42px;
+    filter: invert(1) ;
+}
+#navbar{
+    background-color: black;
+    padding: 13px 14px;
+}
+ul{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
+#navbar li{
+    list-style: none;
+}
+#navbar li a{
+    text-decoration: none;
+    padding: 13px 13px;
+    color: white;
+    font-size: 1.3rem;
+}
+.small{
+    font-size: 25px;
+}
+
+#introSection{
+    color: white;
+    background: center / cover no-repeat  url("/static/img/bg.png");
+    height: 400px;
+    background-color: aqua;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 35px;
+    flex-direction: column;
+
+}
+#missionSection{
+    height: 300px;
+    margin: auto;
+    width: 69%;
+    padding-top: 12px;
+}
+.card{
+    border: 2px solid black;
+    border-radius: 8px;
+    height: 200px;
+    width: 29%;
+    display: inline-block;
+    margin: 20px 22px;
+    
+}
+.card h3{
+    text-align: center;
+    margin-top: 20px;
+    font-family: Arial, Helvetica, sans-serif;
+}
+.card-box{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+.card-img{
+    height: 100px;
+    padding: 0 14px;
+    margin: 15px 9px;
+
+}
+.card-img img{
+    height: inherit;
+}
+.card-content{
+    padding: 0px 15px;
+}
+.card-content a {
+    font-size: 99px;
+
+}
+#sponsorsSection{
+    height: 250px;
+    background-color: rgb(111, 165, 138);
+
+}
+#sponsors{
+    height: 120px;
+    max-width: 1000px;
+    margin: 27px  auto;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+}
+.spimage{
+    height: 80%;
+    margin: 20px;
+}
+h2{
+    text-align: center;
+    font-size: 32px;
+    padding-top: 18px;
+}
+
+#footer{
+    height: 60px;
+    background-color: rgb(0, 0, 0);
+    color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+}

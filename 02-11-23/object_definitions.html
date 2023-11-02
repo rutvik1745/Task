@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Object Definitions</title>
+</head>
+
+<body>
+    <div class="container">
+        <p id="demo"></p>
+    </div>
+    <script>
+        // Create and display a variable:
+        let person = "John Doe";
+        console.log(typeof person)
+        document.getElementById("demo").innerHTML = person;
+        let person1 = { firstName: "John", lastName: "Doe", age: 50, eyeColot: "blue" };
+        console.log(person1);
+        console.log(typeof person1)
+        const person2 = {
+            firstName: "John",
+            lastName: "Doe",
+            age: 50,
+            eyeColor: "blue"
+        };
+        console.log(person2)
+        // This example creates an empty JavaScript object, and then adds 4 properties:
+        const person3 = {}
+        person3.firstname = "John";
+        person3.lastName = "Doe";
+        person3.age = 3;
+        person3.eyeColor= "blue";
+        console.log(person3)
+
+        // Using the JavaScript Keyword new
+        const person4 = new Object();
+        person4.firstName = "Rajesh";
+        person4.lastName = "Doe";
+        person4.age = 5;
+        person4.eyeColor= "blue"
+        console.log(person4)
+
+        const x = person4;
+        x.age = 20;
+        console.log(person4.age)
+    </script>
+</body>
+
+</html>

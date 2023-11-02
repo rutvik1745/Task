@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>object sets</title>
+</head>
+
+<body>
+    <div class="container">
+        <h1>object sets</h1>
+    </div>
+    <script>
+        const letter = new Set(["a", "b", "c"]);
+        console.log(typeof letter)
+
+        // The add() Method
+        letter.add("e")
+        console.log(letter)
+
+        // Create Variables
+        const a = "a";
+        const b = "b";
+        const c = "c";
+
+        // Create a Set
+        const letters = new Set();
+
+        // Add Variables to the Set
+        letters.add(a);
+        letters.add(b);
+        letters.add(c);
+        console.log()
+
+        // The forEach() Method
+        letters.forEach(function (value) {
+            console.log(value)
+        })
+
+        // The forEach() Method
+        console.log(letters.values())
+        console.log(letters.keys())
+
+        // List all entries
+        const iterator = letters.entries();
+        let text = "";
+        for (const entry of iterator) {
+            console.log(entry)
+        }
+        console.log(letters instanceof Set)
+    </script>
+</body>
+
+</html>

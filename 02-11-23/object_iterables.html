@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>JavaScript Iterables</title>
+</head>
+
+<body>
+    <div class="container">
+        <h1>Object Iterables</h1>
+        <p id="demo"></p>
+
+
+    </div>
+    <script>
+        for (const x of "w3School") {
+            console.log(x)
+        }
+
+        // Create aa Array
+        const letters = ["a", "b", "c"];
+
+        // List all Elements
+        let text = "";
+        for (const x of letters) {
+            text += x + "<br>";
+        }
+        document.getElementById("demo").innerHTML = text;
+
+
+        // Home Made Iterable
+        function myNumbers() {
+            let n = 0;
+            return {
+                next: function () {
+                    n += 10;
+                    return { value: n, done: false };
+                }
+            };
+        }
+
+        // Create Iterable
+        const n = myNumbers();
+        n.next(); // Returns 10
+        n.next(); // Returns 20
+        n.next(); // Returns 30
+        console.log(n.next().value)
+
+        // Create an Object
+        myNumbers={};
+
+        //Make it Iterable
+        myNumbers[Symbol.iterator] = function(){
+            let n = 0
+            done = false;
+            return {
+                next(){
+                    n+=10;
+                    if(n==100){done = true}
+                    return {value:n,done:done}
+                }
+            }
+        }
+        console.log(myNumbers)
+        for (const num of myNumbers){
+            console.log(num)
+        }
+
+
+    </script>
+</body>
+
+</html>

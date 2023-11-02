@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Object Accessors</title>
+</head>
+
+<body>
+    <div class="container">
+        <h1>Object Accessors</h1>
+        <p id="demo"></p>
+
+    </div>
+    <script>
+        // Create an object:
+        const person = {
+            firstName: "John",
+            lastName: "Doe",
+            language: "en",
+            get lang() {
+                return this.language;
+            }
+        };
+
+        // Display data from the object using a getter:
+        document.getElementById("demo").innerHTML = person.lang;
+
+        // JavaScript Setter (The set Keyword)
+        const person2 = {
+            firstName: "John",
+            lastName: "Doe",
+            language: "",
+            set lang(lang) {
+                this.language = lang;
+            }
+        };
+
+        // Set an object property using a setter:
+        person.lang = "en";
+
+        // Display data from the object:
+        document.getElementById("demo").innerHTML = person.language;
+        console.log(person)
+
+        const person3 = {
+            firstName: "John",
+            lastName: "Doe",
+            get fullName() {
+                return this.firstName + " " + this.lastName;
+            }
+        };
+
+        // Display data from the object using a getter:
+        document.getElementById("demo").innerHTML = person3.fullName
+        console.log(person3)
+    </script>
+</body>
+
+</html>

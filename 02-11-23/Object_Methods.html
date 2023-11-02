@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Object Method</title>
+</head>
+
+<body>
+    <div class="container">
+        <h1>Object Methods</h1>
+    </div>
+    <script>
+        const person = {
+            firstName: "John",
+            lastName: "Doe",
+            id: 5566,
+            fullName: function () {
+                return this.firstName + " " + this.lastName;
+            }
+        };
+        console.log(person);
+        name = person.fullName();
+        console.log(name);
+
+
+        // Adding a Method to an Object
+        person.name = function () {
+            return this.firstName + " " + this.lastName
+        }
+        console.log(person.name())
+        let message = "Hello world!";
+        let x = message.toUpperCase();
+        console.log(x)
+        person.name = function () {
+            return (this.firstName + " " + this.lastName).toUpperCase();
+        };
+        console.log(person.name())
+    </script>
+</body>
+
+</html>

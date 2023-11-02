@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Object Display</title>
+</head>
+
+<body>
+    <div class="container">
+        <h1>Object Display</h1>
+        <p id="demo"></p>
+    </div>
+    <script>
+        const person = {
+            name: "John",
+            age: 30,
+            city: "New York"
+        };
+        document.getElementById("demo").innerHTML = person;
+        document.getElementById("demo").innerHTML =
+            person.name + "," + person.age + "," + person.city;
+
+
+        // Displaying the Object in a Loop
+        let txt = "";
+        for (let x in person) {
+            txt += person[x] + " ";
+
+        }
+        document.getElementById("demo").innerHTML = txt
+
+        // Using Object.values()
+        const myArray = Object.values(person)
+        console.log(myArray)
+
+
+        // Using JSON.stringify()
+        let myString = JSON.stringify(person);
+        console.log(myString)
+
+
+        // Stringify Dates
+        person.today = new Date();
+        console.log(person, "-------------")
+        let str = JSON.stringify(person)
+        document.getElementById("demo").innerHTML = JSON.stringify(person);
+
+        console.log(person)
+
+
+        const arr = ["John", "Peter", "Sally", "Jane"];
+
+        let myString1 = JSON.stringify(arr);
+        document.getElementById("demo").innerHTML = myString;
+        console.log()
+    </script>
+</body>
+
+</html>

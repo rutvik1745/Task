@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Object Maps</title>
+</head>
+
+<body>
+    <div class="container">
+        <h1>Object Maps</h1>
+
+    </div>
+    <script>
+        //Create a Map
+        const fruits = new Map([
+            ["apples", 500],
+            ["bananas", 300],
+            ["oranges", 200]
+        ]);
+        console.log(fruits.get("apples"))
+
+
+        // Map.set()
+        const fruits1 = new Map();
+
+        // set Map Values
+        fruits1.set("apple", 600);
+        fruits1.set("bananas", 500);
+        fruits1.set("oranges", 200);
+        console.log(fruits1.get("apple"))
+
+        // Map.get()
+        console.log(fruits.get("apples"))
+
+        // Map.size
+        console.log(fruits.size)
+
+        // Map.delete()
+        fruits.delete("apples")
+        console.log(fruits.get("apples"))
+
+        // Map.clear()
+        fruits.clear()
+        console.log(fruits.get("bananas"))
+        console.log(fruits.get("oranges"))
+
+        // Map.has()
+        console.log(fruits.has("apples"))
+
+        // Maps are Objects
+        console.log(typeof fruits)
+        console.log(fruits instanceof Map)
+
+        // Map.forEach()
+        fruits1.forEach(function (Value, key) {
+            console.log(Value, key)
+        })
+
+        // Map.entries()
+        for (const x of fruits1.entries()) {
+            console.log(x)
+        }
+
+        // Map.keys()
+        console.log("--------")
+        for (const x of fruits1.keys()) {
+            console.log(x)
+        }
+
+        // Map.values()
+        for (const x of fruits1.values()) {
+            console.log(x)
+        }
+
+        // Objects as Keys
+        // Create Objects
+        const apples = { name: 'Apples' };
+        const bananas = { name: 'Bananas' };
+        const oranges = { name: 'Oranges' };
+
+        // Create a Map
+        const fruits2 = new Map();
+
+        // Add new Elements to the Map
+        fruits2.set(apples, 500);
+        fruits2.set(bananas, 300);
+        fruits2.set(oranges, 200);
+        console.log(fruits2.get(apples))
+    </script>
+</body>
+
+</html>

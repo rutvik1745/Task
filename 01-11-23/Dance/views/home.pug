@@ -1,0 +1,42 @@
+extends base.pug
+
+block scripts
+    script(src='/static/index.js')
+block style 
+    style 
+        include ../static/style.css 
+block content 
+   
+    section#introSection 
+        div  Welcome to Radhe Dance Academy 
+        div.small  Eat Sleep Dance Repeat 
+    section#missionSection 
+        h2 Our Mission 
+        div.card
+            h3 Dance Perfection
+            div.card-box 
+                div.card-img
+                    img(src="/static/img/logo.png")
+                div.card-content
+                    p This is the best dance acadmy of the univese
+        div.card
+            h3 Dance the way you line
+            div.card-box 
+                div.card-img
+                    img(src="/static/img/logo.png")
+                div.card-content
+                    p This is the best dance acadmy of the univese
+        div.card
+            h3 Expert teaching
+            div.card-box 
+                div.card-img
+                    img(src="/static/img/logo.png")
+                div.card-content
+                    p This is the best dance acadmy of the univese
+    section#sponsorsSection 
+        h2 Our Sponsors
+        div#sponsors 
+            img(src="/static/img/logo.webp", alt="sponsor", srcset="" class="spimage")
+            img(src="/static/img/logo1.webp", alt="sponsor", srcset="" class="spimage")
+            img(src="/static/img/logo2.webp", alt="sponsor", srcset="" class="spimage")
+            img(src="/static/img/logo3.webp", alt="sponsor", srcset="" class="spimage")

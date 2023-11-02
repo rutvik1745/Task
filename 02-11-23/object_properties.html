@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Object Properties</title>
+</head>
+
+<body>
+    <div class="container">
+        <h1>Object Properties</h1>
+        <p id="demo"></p>
+
+    </div>
+    <script>
+        const person = {
+            firstname: "John",
+            lastname: "Doe",
+            age: 50,
+            eyecolor: "blue"
+        };
+        document.getElementById("demo").innerHTML = person.firstname + " is " + person.age + " years old.";
+        console.log(person["firstname"] + " is " + person["age"] + " years old.");
+        console.log(person["firstname"] + " is " + person["age"] + " years old.");
+
+        // JavaScript for...in Loop
+        let txt = "";
+        for (let x in person) {
+            txt += person[x];
+        }
+        console.log(txt)
+        person.nationality = "English"
+
+
+        // Adding New Properties
+
+        console.log(person)
+
+
+        // Deleting Properties
+        delete person.age;
+        console.log(person);
+        delete person["nationality"];
+        console.log(person);
+
+        // Nested Objects
+        myObj = {
+            name: "John",
+            age: 30,
+            cars: {
+                car1: "Ford",
+                car2: "BMW",
+                car3: "Faint"
+            }
+        }
+        console.log(myObj)
+        console.log(myObj.cars.car2)
+        console.log(myObj["cars"]["car2"])
+
+        let p1 = "cars";
+        let p2 = "car2";
+        myObj[p1][p2];
+
+
+        // Nested Arrays and Objects
+        const myObj1 = {
+            name: "John",
+            age: 30,
+            cars: [
+                { name: "Ford", models: ["Fiesta", "Focus", "Mustang"] },
+                { name: "BMW", models: ["320", "X3", "X5"] },
+                { name: "Fiat", models: ["500", "Panda"] }
+            ]
+        }
+        console.log(myObj1)
+        for (let i in myObj1.cars){
+            console.log(myObj1.cars[i].name)
+            for (let j in myObj1.cars[i].models){
+                
+                console.log(myObj1.cars[i].models[j])
+            }
+        }
+    </script>
+</body>
+
+</html>

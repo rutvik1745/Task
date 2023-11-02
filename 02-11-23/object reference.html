@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Object reference</title>
+</head>
+
+<body>
+    <div class="container">
+        <h1>Object reference</h1>
+
+    </div>
+    <script>
+        const person = {
+            firstName: "John",
+            lastName: "Doe",
+            language: "EN"
+        };
+
+        // Change a property
+        // Object.defineProperty(person, "language", { value: "NO" });
+        // console.log(person.language)
+
+
+        // Listing All Properties
+        // Object.defineProperty(person, "language", { enumerable: false });
+        // console.log(Object.getOwnPropertyNames(person))  // Returns an array of properties
+
+
+        // Listing Enumerable Properties
+        // Object.defineProperty(person, "language", { enumerable: false });
+        // console.log(Object.keys(person))  // Returns an array of enumerable properties
+
+
+        // Add a property
+        // Object.defineProperty(person, "year", { value: "2008" });
+        // console.log(person.year)
+
+        // Define a getter
+        Object.defineProperty(person, "fullName", {
+            get: function () { return this.firstName + " " + this.lastName; }
+        });
+        console.log(person.fullName)
+    </script>
+</body>
+
+</html>
