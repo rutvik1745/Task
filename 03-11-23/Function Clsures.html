@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Closures</title>
+</head>
+
+<body>
+    <div class="container">
+        <h1>JavaScript Closures</h1>
+
+    </div>
+    <script>
+        // A function can access all variables defined inside the function, like this:
+        // function myFunction(){
+        //     let a = 4;
+        //     return a*a;
+        // }
+        // console.log(myFunction())
+
+        // let a = 4;
+        // function myFunction() {
+        //     return a * a;
+        // }
+        // console.log(myFunction())
+
+        // // Initiate counter
+        // let counter = 0;
+
+        // // Function to increment counter
+        // function add() {
+        //     counter += 1;
+        // }
+
+        // // call add() 3 time
+        // add();
+        // add();
+        // add();
+        // // The counter should now be 3
+        // console.log(counter)
+
+        // function add() {
+        //     let counter = 0;
+        //     function plus() { counter += 1; }
+        //     plus();
+        //     return counter;
+        // }
+
+        // console.log(add())
+
+
+        const add = (function () {
+            let counter = 0;
+            return function () { counter += 1; return counter }
+        })();
+
+        add();
+        add();
+        console.log(add())
+
+        // the counter is now 3
+    </script>
+</body>
+
+</html>

@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>four</title>
+    <style>
+        * {
+            box-sizing: border-box;
+        }
+
+        .container {
+            width: auto;
+            height: 100vh;
+            margin: auto;
+            padding: auto;
+            background-color: rgb(65, 59, 59);
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+        }
+
+        #img {
+
+            margin: auto;
+            padding: auto;
+            object-fit: fill;
+
+        }
+
+        #main {
+            width: 80%;
+            height: 80%;
+            display: flex;
+            background: url('img/soon.png')no-repeat center center /cover;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            /* box-shadow: 20px rgb(153, 16, 16); */
+            /* box-shadow: 10px 10px 5px lightblue; */
+            box-shadow: 2px 2px 20px rgb(181, 247, 247);
+        }
+
+
+        section {
+            position: absolute;
+            bottom: -1%;
+            right: 0%;
+            height: 8%;
+            width: 100%;
+            display: flex;
+            flex-direction: row;
+            justify-content: center;
+        }
+
+        section img {
+
+            width: 4%;
+            height: 60%;
+            margin-left: 2px;
+            margin-right: 2px;
+        }
+
+        #moreinformation {
+            position: relative;
+            top: 0%;
+            left: 35%;
+            color: white;
+            width: 30%;
+            height: 100%;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            text-align: center;
+        }
+
+        input {
+            display: inline-block;
+            width: 45%;
+            padding: 15px;
+            font-size: 20px;
+            border: 2px solid black;
+        }
+
+        .btn {
+            display: inline-block;
+            font-size: 20px;
+            width: 17%;
+            padding: 13px;
+            border: 2px solid black;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="container">
+        <div id="main">
+            <!-- <img src="img/soon.png" alt="" id="img"> -->
+            <div id="moreinformation">
+                <h1>Get More Information</h1>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Doloremque sit cupiditate ratione minus
+                    deserunt
+                    non nulla. Dolore quos omnis sint!</p>
+                <form action="">
+                    <input type="email" name="email" id="email" placeholder="Enter Your Email">
+                    <Button class="btn">Submit</Button>
+                </form>
+            </div>
+            <section>
+                <img src="img/fecbool.webp" id="image" alt="">
+                <img src="img/instagram.webp" id="image" alt="">
+                <img src="img/twitter.webp" id="image" alt="">
+            </section>
+        </div>
+
+    </div>
+</body>
+
+</html>

@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Function Call</title>
+</head>
+
+<body>
+    <div class="container">
+        <h1>JavaScript Function call()</h1>
+
+    </div>
+    <script>
+        // const person = {
+        //     firstName: "Johm",
+        //     lastName: "Doe",
+        //     fullName: function(){
+        //         return this.firstName + " " + this.lastName
+        //     }
+        // }
+        // console.log(person.fullName())
+
+        // const person = {
+        //     fullName: function () {
+        //         return this.firstName + " " + this.lastName;
+        //     }
+        // }
+        // const person1 = {
+        //     firstName: "John",
+        //     lastName: "Doe"
+        // }
+        // const person2 = {
+        //     firstName: "Mary",
+        //     lastName: "Doe"
+        // }
+        // console.log(person.fullName.call(person2))
+
+        const person = {
+            fullName: function (city, country) {
+                return this.firstName + " " + this.lastName + "," + city + "," + country;
+            }
+        }
+
+        const person1 = {
+            firstName: "John",
+            lastName: "Doe"
+        }
+
+        console.log(person.fullName.call(person1, "Oslo", "Norway"))
+    </script>
+</body>
+
+</html>

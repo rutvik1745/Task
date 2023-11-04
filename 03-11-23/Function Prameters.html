@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Function Parameters</title>
+</head>
+<body>
+    <div class="container">
+        <h1>JavaScript Function Parameters</h1>
+        <p id="demo"></p>
+
+    </div>
+    <script>
+        function myFunction(x,y){
+            if(y === undefined){
+                y = 2;
+            }
+            return x*y;
+        }
+        document.getElementById("demo").innerHTML = myFunction(4);
+
+
+        // Default Parameter Values
+        function myFunction1(x,y=10){
+            return x + y;
+        }
+        console.log(myFunction1(4))
+
+        // Function Rest Parameter
+        function sum(...args){
+            let sum = 0;
+            for(let arg of args)sum+=arg;
+            return sum;
+        }
+        let x = sum(4,9,16,25,29,100,66,77);
+        console.log(x)
+
+        // The Arguments Object
+        x1 = findMax(1,123,500,115,44,88);
+        function findMax(){
+            let max = -Infinity;
+            for(let i = 0 ; i < arguments.length; i ++){
+                if (arguments[i]>max){
+                    max = arguments[i]
+                }
+            }
+            return max;
+        }
+        x1 = findMax(1,123,500,115,44,88);
+        console.log(x1)
+
+        function sumAll(){
+            let sum = 0;
+            for(let i = 0; i < arguments.length; i++){
+                sum+= arguments[i];
+            }
+            return sum;
+        }
+        x2 = sumAll(10,20,30)
+        console.log(x2)
+
+    </script>
+</body>
+</html>
