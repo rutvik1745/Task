@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1>tgin idss kondsdf</h1>
+    <p>{item}</p>
+    <li><a href="">{{item}}</a></li>
+    {% for i in item%}
+        <h1>{{i.title}}</h1>
+        <h1>{{i.details}}</h1>
+        <h1></h1>
+    {% endfor %}
+
+    <form action="/del/{{i.id}}" method="POST" style=" padding-right: 4%; padding-bottom: 3%;">
+        {% csrf_token %}
+        <button value="remove" type="submit" class="btn btn-primary" style="float: right;"><span
+                class="glyphicon glyphicon-trash"></span> remove</button>
+    </form>
+</body>
+</html>
