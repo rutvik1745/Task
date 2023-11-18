@@ -12,6 +12,8 @@ def  index(request):
 def  analyze(request):
     djtext = request.GET.get('text','default')
     removepunc = request.GET.get('removepunc','off')
+    fullcaps = request.GET.get('fullcaps','off')
+    removespace = request.GET.get('removespace','off')
     print(removepunc)
     print(djtext)
     # analyzed = djtext
@@ -22,6 +24,27 @@ def  analyze(request):
             if i not in punctuations:
                 analyzed = analyzed + i
         params = {'purouse':'Removed Punctuations','analyzed_text':analyzed}
+        return render(request,"analyze.html",params)
+    elif(fullcaps=="on"):
+        analyzed=""
+        for char in djtext:
+                analyzed = analyzed + char.upper()
+                
+        params = {'purouse':'Change to upper case','analyzed_text':analyzed}
+        return render(request,"analyze.html",params)
+    elif(removespace=="on"):
+        analyzed=""
+        # punctuations = "  "
+        # for char in djtext:
+
+        #         if char != punctuations:
+        #             analyzed = analyzed + char
+        for index, char in enumerate(djtext):
+            if not(djtext[index] ==" " and djtext[index+1]==" "):
+                analyzed = analyzed + char
+
+                
+        params = {'purouse':'remover new lines','analyzed_text':analyzed}
         return render(request,"analyze.html",params)
     else:
         return HttpResponse("Error")
